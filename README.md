@@ -1,39 +1,30 @@
+# ⭐ In App Review
 
-# 🚀 Getting Started
+A SwiftUI example demonstrating how to prompt users for App Store reviews using StoreKit.
 
-## 1. Clone the Repo
-```bash
-git clone https://github.com/NDCSwift/REPO-NAME.git
-cd REPO-NAME
-```
-Or select “Clone Git Repository…” when Xcode launches.
+## 📖 What this is
+This project shows how to implement in-app review prompts using Apple's StoreKit `requestReview` API. It covers when and how to trigger the review dialog, respecting Apple's guidelines on frequency. A practical reference for any app looking to boost its App Store ratings organically.
 
-⸻
+## ✅ Why you'd use it
+- **Native StoreKit integration** — no third-party libraries needed, uses Apple's official API
+- **Best practices included** — see how to time the prompt so it's not annoying to users
+- **Simple to drop in** — minimal code required to add review prompts to any SwiftUI app
 
-## 2. Open in Xcode
-	•	Double-click the .xcodeproj or .xcworkspace.
+[![Watch on YouTube](https://img.shields.io/badge/YouTube-Watch%20the%20Tutorial-red?style=for-the-badge&logo=youtube)](https://youtu.be/i9rqtVbHr2o)
 
-⸻
+## 🚀 Getting Started
+1. Clone the repo
+2. Open `InAppReview.xcodeproj` in Xcode
+3. Select your target device or simulator
+4. Update the bundle ID if needed
+5. Build and run
 
-## 3. Set Your Development Team
+## 📝 Notes
+- Built with SwiftUI
+- Review prompts only appear a limited number of times per year per Apple's guidelines
+- Test on a real device for best results
 
-In Xcode, navigate to:
-
-TARGET → Signing & Capabilities → Team
-	
-    •	Select your personal or organizational team.
-
-⸻
-
-## 4. Update the Bundle Identifier
-	•	Change com.example.MyApp to a unique identifier (e.g., com.yourname.MyApp).
-
-⸻
-
-🛠️ Notes
-
-	•	If you see a code signing error, check that Team and Bundle ID are set.
-	•	If building for a device, ensure your provisioning profile supports the required capabilities (Push, iCloud, etc.).
-
-📺 YouTube
-[Click here to check out the guide on YouTube](https://youtu.be/i9rqtVbHr2o)
+## ⚙️ Requirements
+- iOS 16+
+- Xcode 14+
+- Swift 5.7+
